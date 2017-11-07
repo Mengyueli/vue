@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js 第一节</title>
+	<!-- 引入vue-CDN 标签里会用到vue -->
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app">
+		<!-- 只能拿到字符串的值 模板绑定 -->
+		<!-- {{name}}模板语法 -->
+		<!-- 虚拟DOM直接与真实DOM进行比较，有不同的直接插入真实DOM -->
+	
+		<p>hello{{name}}</p>
+		<p>{{job}}</p>
+		<p>{{greet('afternoon')}}</p>
+
+		<!-- 属性绑定 -->
+		<a v-bind:href="website">
+			百度
+		</a>
+		<p v-html="websiteTag"></p>
+		<input type="text" :value="name">
+
+		
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>

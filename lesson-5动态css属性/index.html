@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js 动态Css样式</title>
+
+	<!-- 引入vue-CDN 标签里会用到vue -->
+	<script src="https://unpkg.com/vue"></script>
+	<!-- 引入css -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app">
+		<h1>动态Css样式</h1>
+
+		<h2>示例 1</h2>
+		<!-- div的class名  -->
+		<!-- <div v-bind:class="{red:true,blue:true}" ></div> -->
+		<div v-on:click="changeColor = !changeColor" v-bind:class="{changeColor:changeColor}" >
+			<span>Henry</span>
+		</div>
+
+
+		<h2>示例 2</h2>
+		<button v-on:click="color = !color">改颜色</button>
+		<button v-on:click="width = !width">改宽度</button>
+		<!-- <p v-bind:class="{color:color,width:width}">Henry</p> -->
+		<p v-bind:class="compareClasses">123</p>
+
+		
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>

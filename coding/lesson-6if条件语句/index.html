@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js 条件语句 v-if</title>
+
+	<!-- 引入vue-CDN 标签里会用到vue -->
+	<script src="https://unpkg.com/vue"></script>
+	<!-- 引入css -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app">
+		<h1>条件语句 v-if</h1>
+		<button  v-on:click="error = !error">Toggle Error</button>
+		<button v-on:click="success = !success">Toggle Success</button>
+		<!-- <p v-if="error">网络连接失败：404</p>
+		<p v-else-if="success">网络连接成功：200</p> -->
+
+		<!-- DOM里是通过改变display:none -->
+		<p v-show="error">网络连接失败：404</p>
+		<p v-show="success">网络连接成功：200</p>
+
+
+		
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>

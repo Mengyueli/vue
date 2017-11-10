@@ -1,0 +1,22 @@
+span{
+	background: hotpink;
+	padding: 10px;
+	color:#fff;
+	display: inline-block;
+	margin: 10px 0px;
+}
+.changeColor span{
+	background: red;
+}
+p{
+	background:lightblue;
+	border:1px solid red;
+	width: 100px;
+	color: #fff;
+}
+.color{
+	background: hotpink;
+}
+.width{
+	width: 200px;
+}

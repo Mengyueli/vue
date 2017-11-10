@@ -1,0 +1,19 @@
+1.cd 到project文件夹下 vue init webpack vcustomers
+2.cd vcustomers
+3.cnpm install
+4.npm run dev
+这样就新建好了一个项目
+安装路由
+cnpm install vue-router --save-dev
+
+MVC：M:model（数据） V:view(视图) C:controller(控制层)
+
+路由：
+引入，使用，配置
+vue-resourse：$.ajax能做的事情，vue-resource插件一样也能做到
+引入，使用，配置
+
+增删改查：
+增加，在导航栏添加增加选项，路由到相应的页面，
+然后，在main.js里引入和配置路由，并添加相应的vue文件
+

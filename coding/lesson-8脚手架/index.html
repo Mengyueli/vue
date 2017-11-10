@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js 两个容器</title>
+
+	<!-- 引入vue-CDN 标签里会用到vue -->
+	<script src="https://unpkg.com/vue"></script>
+	<!-- 引入css -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app-one">
+		<p>{{title}}</p>
+		<h3>{{greet}}</h3>
+
+
+
+		
+	</div>
+
+	<div id="vue-app-two">
+		<p>{{title}}</p>	
+		<h3>{{greet}}</h3>
+	<!-- button 改变one容器里面的title -->
+		<button v-on:click="change">change Title</button>
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>

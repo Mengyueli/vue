@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业</title>
+	<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="img">
+			<img v-bind:src="judge()" alt="">
+		</div>
+		<div class="progress" v-bind:style="{width:width + 'px'}">
+			
+		</div>
+		<div class="btn">
+			<button v-on:click="reduce(10)">button punch</button>
+			<button v-on:click="restart()">button restart</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
